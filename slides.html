@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>On Text Kit</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <style type="text/css">
+      @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
+      @import url(https://fonts.googleapis.com/css?family=PT+Serif:400,700,400italic);
+      @import url(https://fonts.googleapis.com/css?family=PT+Mono:400,700,400italic);
+
+      body { font-family: 'PT Serif'; }
+      h1, h2, h3 {
+        font-family: 'Yanone Kaffeesatz';
+        font-weight: normal;
+      }
+      h1 {
+        border-bottom: 1px solid gray;
+      }
+      .remark-code, .remark-inline-code { font-family: 'PT Mono'; }
+      .remark-code { font-size: 17px; }
+      .remark-inline-code { font-size: 75%; color: #383D3D; }
+      .remark-code-line-highlighted { background-color: rgba(0, 130, 255, 0.5); }
+      .remark-slide-number { display: none; }
+      .remark-slide-content { background-color: #B2C0C0; }
+
+      * {
+        text-rendering: optimizeLegibility;
+        font-variant-ligatures: discretionary-ligatures;
+        -webkit-font-feature-settings: "liga", "dlig";
+        image-rendering: -webkit-optimize-contrast
+      }
+
+      .full-width img { width: 100%; }
+
+      .full-height img { height: 100%; }
+
+      .full-width-border img {
+        box-sizing: border-box;
+        width: 100%;
+        border: 10px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://gnab.github.io/remark/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create({ sourceUrl: 'content.md' });
+    </script>
+  </body>
+</html>
