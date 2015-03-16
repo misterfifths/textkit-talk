@@ -324,6 +324,32 @@ template: demo
 ---
 
 
+# Inline Images
+
+--
+
+### `NSAttachmentAttributeName`<br>&nbsp;&nbsp;&nbsp;→ `NSTextAttachment`
+
+### `NSTextAttachment` has an `image` property and a `bounds` for setting its size.
+
+--
+
+### This one's a little weird.
+
+???
+
+Since attributes in attr strings live on ranges of the string, we need some character to hang this attribute on. You're thinking, "a space, maybe? or ... anything?"  well... the answer is an obscure unicode character called "object replacement". luckily you don't really need to know that detail.
+
+--
+
+### Added to an `NSAttachmentCharacter`, but you never really do that directly. Use `+[NSAttributedString attributedStringWithAttachment:]`
+
+---
+
+template: demo
+
+---
+
 
 
 # A Deeper Dive
@@ -383,7 +409,7 @@ template: demo
 
 --
 
-## At its core, just a rectangle. But can support arbitrary shapes via exclusion paths (more on tha tlater)
+## At its core, just a rectangle. But can support arbitrary shapes via exclusion paths (more on that later)
 
 ---
 
