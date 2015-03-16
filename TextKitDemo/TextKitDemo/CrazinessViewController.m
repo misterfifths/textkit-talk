@@ -23,7 +23,7 @@
 {
     [super viewDidLoad];
 
-//    [self.textView2.layoutManager removeTextContainerAtIndex:0];
+    // Rewire textView1's layoutManager to also use textView2's textContainer
     [self.textView1.layoutManager addTextContainer:self.textView2.textContainer];
 }
 
